@@ -57,7 +57,7 @@ MarketPulse's real-time stock market analysis platform processes vast amounts of
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/oyinloluwa20/REAL-TIME-MARKET-STOCK-ANALYSIS
    cd REAL-TIME-STOCK-MARKET-ANALYSIS
    ```
 
@@ -67,18 +67,14 @@ MarketPulse's real-time stock market analysis platform processes vast amounts of
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-4. **Environment configuration**
+3. **Environment configuration**
    ```bash
    cp .env.example .env
-   # Edit .env with your configuration
+   # Edit .env with your api keys
    ```
 
-5. **Start infrastructure services**
+4. **Start infrastructure services**
    ```bash
    docker-compose up -d kafka spark postgres
    ```
@@ -97,11 +93,6 @@ python producer/main.py
 python consumer/main.py
 ```
 
-### API Endpoints
-
-- `GET /api/market-data` - Retrieve real-time market data
-- `GET /api/signals` - Get trading signals
-- `POST /api/analytics` - Run custom analytics
 
 ## Development
 
@@ -123,17 +114,7 @@ REAL-TIME-STOCK-MARKET-ANALYSIS/
 
 ### Running Tests
 
-```bash
-pytest tests/
-```
 
-### Code Quality
-
-```bash
-black .  # Code formatting
-flake8 . # Linting
-mypy .   # Type checking
-```
 
 ## Contributing
 
@@ -156,10 +137,3 @@ mypy .   # Type checking
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
-
-For questions or support, please contact the development team at [email/contact information].
-
----
-
-*Note: This platform is designed for educational and research purposes. Always consult with financial professionals before making investment decisions.*
