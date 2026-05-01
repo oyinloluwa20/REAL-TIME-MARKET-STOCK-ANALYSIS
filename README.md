@@ -31,7 +31,6 @@ MarketPulse's real-time stock market analysis platform processes vast amounts of
 
 ![Architecture](assets/readme/marketpulse.gif)
 
-
 ### System Components
 
 - **Producer**: Data ingestion and streaming to Kafka topics
